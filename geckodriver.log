@@ -1,0 +1,66 @@
+1588949874090	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepCnz09"
+1588949874645	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588949875430	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588949875431	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588949875431	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588949875431	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588949877498	Marionette	INFO	Listening on port 41849
+1588949877599	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x37010F,name=PContent::Msg_AccumulateChildHistograms) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x370114,name=PContent::Msg_RecordDiscardedData) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1588949904606	Marionette	INFO	Stopped listening on port 41849
+1588949924873	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelNUZyz"
+1588949925325	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588949926077	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588949926077	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588949926077	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588949926077	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588949928054	Marionette	INFO	Listening on port 45293
+1588949928089	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 9903, MediaDecoderStateMachine #1] WARNING: 7f5668efb7a0 OpenCubeb() failed to init cubeb: file /build/firefox-oDRqyc/firefox-75.0+build3/dom/media/AudioStream.cpp, line 328
+[Child 9903, MediaDecoderStateMachine #1] WARNING: Decoder=7f5669797800 [OnMediaSinkAudioError]: file /build/firefox-oDRqyc/firefox-75.0+build3/dom/media/MediaDecoderStateMachine.cpp, line 3758
+JavaScript error: https://www.instagram.com/static/bundles/es6/ConsumerLibCommons.js/f7a60ce0b74d.js, line 62: TypeError: o is undefined
+[Child 9903, MediaDecoderStateMachine #1] WARNING: 7f5668efbfc0 OpenCubeb() failed to init cubeb: file /build/firefox-oDRqyc/firefox-75.0+build3/dom/media/AudioStream.cpp, line 328
+[Child 9903, MediaDecoderStateMachine #1] WARNING: Decoder=7f5655f10800 [OnMediaSinkAudioError]: file /build/firefox-oDRqyc/firefox-75.0+build3/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 9903, MediaDecoderStateMachine #1] WARNING: 7f56667df3d0 OpenCubeb() failed to init cubeb: file /build/firefox-oDRqyc/firefox-75.0+build3/dom/media/AudioStream.cpp, line 328
+[Child 9903, MediaDecoderStateMachine #1] WARNING: Decoder=7f5655f10800 [OnMediaSinkAudioError]: file /build/firefox-oDRqyc/firefox-75.0+build3/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 9903, MediaDecoderStateMachine #1] WARNING: 7f5668efc160 OpenCubeb() failed to init cubeb: file /build/firefox-oDRqyc/firefox-75.0+build3/dom/media/AudioStream.cpp, line 328
+[Child 9903, MediaDecoderStateMachine #1] WARNING: Decoder=7f56564d2000 [OnMediaSinkAudioError]: file /build/firefox-oDRqyc/firefox-75.0+build3/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 9903, MediaDecoderStateMachine #1] WARNING: 7f56690cd2c0 OpenCubeb() failed to init cubeb: file /build/firefox-oDRqyc/firefox-75.0+build3/dom/media/AudioStream.cpp, line 328
+[Child 9903, MediaDecoderStateMachine #1] WARNING: Decoder=7f56564d2000 [OnMediaSinkAudioError]: file /build/firefox-oDRqyc/firefox-75.0+build3/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 9903, MediaDecoderStateMachine #1] WARNING: 7f56698431f0 OpenCubeb() failed to init cubeb: file /build/firefox-oDRqyc/firefox-75.0+build3/dom/media/AudioStream.cpp, line 328
+[Child 9903, MediaDecoderStateMachine #1] WARNING: Decoder=7f56564d2000 [OnMediaSinkAudioError]: file /build/firefox-oDRqyc/firefox-75.0+build3/dom/media/MediaDecoderStateMachine.cpp, line 3758
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 84: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIInterfaceRequestor.getInterface]
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 84: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIInterfaceRequestor.getInterface]
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 84: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIInterfaceRequestor.getInterface]
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 84: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIInterfaceRequestor.getInterface]
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 84: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIInterfaceRequestor.getInterface]
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 84: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIInterfaceRequestor.getInterface]
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 84: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIInterfaceRequestor.getInterface]
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 84: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIInterfaceRequestor.getInterface]
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 84: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIInterfaceRequestor.getInterface]
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 84: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIInterfaceRequestor.getInterface]
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 84: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIInterfaceRequestor.getInterface]
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 84: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIInterfaceRequestor.getInterface]
+JavaScript error: resource://devtools/server/actors/network-monitor/network-response-listener.js, line 84: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIInterfaceRequestor.getInterface]
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+1588951041081	Marionette	INFO	Stopped listening on port 45293
+1589035136940	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEG4BBz"
+1589035137362	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589035137915	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589035137916	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589035137916	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589035137916	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589035139723	Marionette	INFO	Listening on port 43111
+1589035139748	Marionette	WARN	TLS certificate errors will be ignored for this session
