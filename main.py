@@ -50,4 +50,4 @@ class InstaBot:
         sleep(3)
 
 
-InstaBot(username=4079029897, password='Josue1234!')
+InstaBot(username=4079029897, password='na!')
