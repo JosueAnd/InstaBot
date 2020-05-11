@@ -64,3 +64,458 @@ JavaScript error: , line 0: AbortError: A request was aborted, for example throu
 1589035137916	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 1589035139723	Marionette	INFO	Listening on port 43111
 1589035139748	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1589126864933	Marionette	INFO	Stopped listening on port 43111
+1589126934252	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilez50LLr"
+1589126934685	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589126935347	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589126935347	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589126935347	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589126935347	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589126937279	Marionette	INFO	Listening on port 39417
+1589126937361	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589126950444	Marionette	INFO	Stopped listening on port 39417
+1589141336896	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1N3low"
+1589141337315	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589141337940	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589141337940	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589141337941	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589141337941	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589141339858	Marionette	INFO	Listening on port 38575
+1589141339904	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589141358564	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejqyPnU"
+1589141359017	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589141359693	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589141359694	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589141359694	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589141359694	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589141361686	Marionette	INFO	Listening on port 39833
+1589141361789	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589141367179	Marionette	INFO	Stopped listening on port 39833
+1589141367995	Marionette	INFO	Stopped listening on port 38575
+1589141368465	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHREqgx"
+1589141368896	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589141369570	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589141369570	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589141369570	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589141369570	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589141371457	Marionette	INFO	Listening on port 36261
+1589141371477	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+1589141486730	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFeinJ2"
+1589141487145	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589141487787	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589141487787	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589141487787	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589141487787	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589141489738	Marionette	INFO	Listening on port 33749
+1589141489838	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589141505468	Marionette	INFO	Stopped listening on port 33749
+1589141723496	Marionette	INFO	Stopped listening on port 36261
+1589141724599	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2QXPwL"
+1589141725063	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589141725765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589141725765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589141725765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589141725765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589141727659	Marionette	INFO	Listening on port 33055
+1589141727708	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1589142064344	Marionette	INFO	Stopped listening on port 33055
+1589142065708	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePHEXed"
+1589142066150	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589142066806	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589142066806	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589142066806	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589142066807	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589142068744	Marionette	INFO	Listening on port 34343
+1589142068825	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589142284624	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekxOPPW"
+1589142285085	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589142285765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589142285765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589142285765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589142285765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589142285979	Marionette	INFO	Stopped listening on port 34343
+1589142287700	Marionette	INFO	Listening on port 42941
+1589142287732	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589142432585	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepIG97s"
+1589142433030	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589142433709	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589142433709	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589142433710	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589142433710	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589142434656	Marionette	INFO	Stopped listening on port 42941
+1589142435682	Marionette	INFO	Listening on port 36285
+1589142435698	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1589142476342	Marionette	INFO	Stopped listening on port 36285
+1589143828383	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7cEgID"
+1589143828799	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589143829475	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589143829475	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589143829475	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589143829475	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589143831476	Marionette	INFO	Listening on port 34417
+1589143831498	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589143853046	Marionette	INFO	Stopped listening on port 34417
+1589144205604	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuYXp9Y"
+1589144206060	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589144206727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589144206727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589144206727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589144206727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589144208580	Marionette	INFO	Listening on port 37203
+1589144208616	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+1589144615269	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilet3yaAb"
+1589144615728	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589144616408	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589144616408	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589144616408	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589144616408	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589144618323	Marionette	INFO	Listening on port 36641
+1589144618378	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589144625539	Marionette	INFO	Stopped listening on port 36641
+1589144720358	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebRWJPd"
+1589144720816	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589144721500	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589144721501	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589144721501	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589144721501	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589144723433	Marionette	INFO	Listening on port 38503
+1589144723469	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589144730756	Marionette	INFO	Stopped listening on port 38503
+1589144739563	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileejZnoM"
+1589144739992	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589144740688	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589144740688	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589144740688	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589144740688	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589144742600	Marionette	INFO	Listening on port 38453
+1589144742673	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589144773925	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2vX6EO"
+1589144774123	Marionette	INFO	Stopped listening on port 38453
+1589144774381	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589144775063	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589144775063	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589144775063	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589144775063	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Exiting due to channel error.
+1589144776854	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVtF6uK"
+1589144777314	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589144777997	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589144777997	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589144777998	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589144777998	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589144779891	Marionette	INFO	Listening on port 42371
+1589144779964	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589144790718	Marionette	INFO	Stopped listening on port 42371
+1589144920534	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXEDMq8"
+1589144920991	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589144921505	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589144921505	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589144921505	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589144921506	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589144923493	Marionette	INFO	Listening on port 33885
+1589144923542	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02ea191a10 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02ea16ac00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02f5adc390 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02d9e22400 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02e5feea50 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02da90c800 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02d4e74bb0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02d4fdd800 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02d4f0ea50 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02e2965c00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02d83d8c80 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02e22edc00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02e2ece870 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02e2b10c00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02e2ecf090 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02cbebfc00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02c8799160 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02cb0ef800 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02c15e8640 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02c15ecc00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02ea191d50 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02c7dc8c00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02cbef4230 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02e9e08c00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02d4f0d050 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02d831b400 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02dadbf300 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02bec17000 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02e8d94120 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02c81c0c00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02e9e77870 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02bec16c00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02eadcdef0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02da803000 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02ed346120 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02c81c6400 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02c7f3c4a0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02c7f2f800 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02d37e83d0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02c1466400 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02c7f3b460 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02b383b800 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02c908f3d0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02b383c000 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02c8fd52c0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02bd7cb400 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02cbef4230 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02c15c8c00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02d00fe980 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02c81c7000 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02d00fd870 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02c15d3c00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02d4f0d940 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02c1466c00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02d63f9fc0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02c7ff1c00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02d7ada640 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02c146b400 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02e2b1b300 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02d3740000 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02e7e52bf0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02d9e2ac00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02e7e52cc0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02e9ecbc00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02eb45aa10 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02edaa3000 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02f5a4bf30 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02f4fbbc00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02edae5fc0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02edaa4800 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f029d60b300 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02a6693400 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f029b8bccc0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f029f27dc00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02961fd120 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f0298a6fc00 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02e2b1ad50 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02bd7d1800 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02c259d7a0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02da808800 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02a34baef0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02b1542000 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f02d4afea50 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f02d1a96400 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+[Child 30774, MediaDecoderStateMachine #1] WARNING: 7f029b8bbbb0 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 30774, MediaDecoderStateMachine #1] WARNING: Decoder=7f029f230800 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+1589145141421	Marionette	INFO	Stopped listening on port 33885
+1589145225064	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9AEgmX"
+1589145225523	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589145226037	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589145226037	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589145226037	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589145226037	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589145227998	Marionette	INFO	Listening on port 33135
+1589145228071	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+1589146436858	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehLBD2n"
+1589146437324	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589146437897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589146437897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589146437897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589146437897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589146439942	Marionette	INFO	Listening on port 37245
+1589146439967	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.instagram.com/static/bundles/es6/ConsumerLibCommons.js/25a0b936302e.js, line 62: TypeError: o is undefined
+1589146458100	Marionette	INFO	Stopped listening on port 37245
+1589147418642	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehF4mHJ"
+1589147419070	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589147419603	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589147419603	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589147419603	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589147419603	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589147421616	Marionette	INFO	Listening on port 35777
+1589147421650	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589147441752	Marionette	INFO	Stopped listening on port 35777
+1589147453985	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIO4Gn6"
+1589147454431	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589147454994	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589147454995	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589147454995	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589147454995	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589147457020	Marionette	INFO	Listening on port 32839
+1589147457098	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 348, MediaDecoderStateMachine #1] WARNING: 7fc458e80120 OpenCubeb() failed to init cubeb: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/AudioStream.cpp, line 328
+[Child 348, MediaDecoderStateMachine #1] WARNING: Decoder=7fc452405400 [OnMediaSinkAudioError]: file /build/firefox-EC1hjk/firefox-76.0+build2/dom/media/MediaDecoderStateMachine.cpp, line 3758
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1C0011,name=PBackgroundStorage::Msg_Observe) Channel error: cannot send/recv
+
+1589147619971	Marionette	INFO	Stopped listening on port 32839
+JavaScript error: , line 0: uncaught exception: Object
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "node is null"
+console.error: "getLayout@resource://devtools/server/actors/styles.js:944:5\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new Error("Protocol error (unknownError): node is null from: server0.conn0.child2/pagestyle25", "resource://devtools/shared/protocol/Front.js", 319))
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:402:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:402:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:402:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "node is null"
+console.error: "getLayout@resource://devtools/server/actors/styles.js:944:5\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: (new Error("Protocol error (unknownError): node is null from: server0.conn0.child2/pagestyle25", "resource://devtools/shared/protocol/Front.js", 319))
+JavaScript error: resource://devtools/client/fronts/node.js, line 404: TypeError: this.parentFront is null
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:402:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+console.error: (new TypeError("nodeFront.walkerFront is null", "resource://devtools/client/inspector/markup/markup.js", 925))
+TypeError: nodeFront.walkerFront is null: _onNewSelection@resource://devtools/client/inspector/markup/markup.js:925:7
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+setNodeFront@resource://devtools/client/framework/selection.js:161:10
+onDetached@resource://devtools/client/inspector/inspector.js:1639:20
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+_onMutations@resource://devtools/client/framework/selection.js:104:12
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:402:10
+
+console.error: (new Error("Can not send request 'getAllSelectors' because front 'domnode' is already destroyed.", "resource://devtools/shared/protocol/Front/FrontClassWithSpec.js", 29))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+JavaScript error: resource://devtools/client/inspector/inspector.js, line 1548: TypeError: targetFront is null
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:402:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+1589151375815	Marionette	INFO	Stopped listening on port 33135
+1589151421066	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHp9wTV"
+1589151421518	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589151422116	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589151422116	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589151422116	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589151422116	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589151424112	Marionette	INFO	Listening on port 38247
+1589151424174	Marionette	WARN	TLS certificate errors will be ignored for this session
+1589151599133	Marionette	INFO	Stopped listening on port 38247
+1589151600028	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoZf2D0"
+1589151600464	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589151601020	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589151601020	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589151601020	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589151601021	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589151602939	Marionette	INFO	Listening on port 37251
+1589151603036	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://devtools/client/inspector/boxmodel/box-model.js, line 460: TypeError: this.inspector.selection.nodeFront is null
+JavaScript error: resource://devtools/client/inspector/boxmodel/box-model.js, line 460: TypeError: this.inspector.selection.nodeFront is null
+JavaScript error: resource://devtools/client/inspector/boxmodel/box-model.js, line 460: TypeError: this.inspector.selection.nodeFront is null
+JavaScript error: resource://devtools/client/inspector/boxmodel/box-model.js, line 460: TypeError: this.inspector.selection.nodeFront is null
+JavaScript error: resource://devtools/client/inspector/boxmodel/box-model.js, line 460: TypeError: this.inspector.selection.nodeFront is null
+JavaScript error: resource://devtools/client/inspector/boxmodel/box-model.js, line 460: TypeError: this.inspector.selection.nodeFront is null
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1589152307299	Marionette	INFO	Stopped listening on port 37251
+1589152308261	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGVSPS7"
+1589152308728	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589152309422	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589152309422	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589152309423	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589152309423	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589152311407	Marionette	INFO	Listening on port 42009
+1589152311471	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1589152353423	Marionette	INFO	Stopped listening on port 42009
