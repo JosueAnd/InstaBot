@@ -13,7 +13,11 @@ from exceptions import *
 class InstaBot:
     def __init__(self, username, password):
         """
-            Get an instance of a web browser, login to Instagram and start auto-liking.
+            Get an instance of a web browser, login to Instagram and start auto-liking.\n
+
+            :arg
+                -   username:   Phone number, email, whatever you use to login to Instagram.
+                -   password:   Your Instagram password associated with the username.
         """
 
         # InstaBot instance variables.
@@ -52,7 +56,7 @@ class InstaBot:
             Find a user and navigate to their page.\n
 
             :arg
-                -   user:   a string of the username of the user you intend to find.
+                -   user:   A string of the username of the user you intend to find.
             :returns
                 -   True on success of _login() attempt.
             :raises
@@ -73,24 +77,22 @@ class InstaBot:
                 raise UserNotFoundError
 
     def _like_posts(self):
-        if self._wait_until(e_c.presence_of_all_elements_located, By.CSS_SELECTOR, 'article>div'):
-            posts = self.driver.find_elements(By.CSS_SELECTOR, 'article>img')
+        if self._wait_until(e_c.presence_of_all_elements_located, By.CSS_SELECTOR, 'article a'):
+            posts = self.driver.find_elements(By.CSS_SELECTOR, 'article a')
             for post in posts:
-                print(post.text)
-                # try:
-                #     self.wait.until(e_c.presence_of_element_located(
-                #         (By.CSS_SELECTOR, 'button svg[aria-label*="like"]')
-                #     ))
-                #     like_button = self.driver.find_element(By.CSS_SELECTOR,
-                #                                'button svg[aria-label*="like"]')
-                # except NoSuchElementException:
-                #     pass
-                # else:
-                #     if 'Like' in like_button.get_attribute('aria-label'):
-                #         like_button.click()
-                #     close_button = self.driver.find_element(By.CSS_SELECTOR,
-                #                             'button svg[aria-label="Close"]')
-                #     close_button.click()
+                self._wait_until(e_c.presence_of_element_located, By.CSS_SELECTOR,
+                                     'button svg[aria-label*="like"]')
+                try:
+                    like_button = post.find_element(By.CSS_SELECTOR,
+                                                    'button svg[aria-label*="like"]')
+                except NoSuchElementException:
+                    pass
+                else:
+                    if 'Like' in like_button.get_attribute('aria-label'):
+                        like_button.click()
+                    close_button = self.driver.find_element(By.CSS_SELECTOR,
+                                            'button svg[aria-label="Close"]')
+                    close_button.click()
 
     def _login(self):
         """
@@ -100,13 +102,17 @@ class InstaBot:
             :returns
                 -   True on success of _login() attempt.
             :raises
-                - LoginError
+                -   LoginError
         """
         if self._wait_until(e_c.presence_of_element_located, By.NAME, 'username'):
             # Send username to Username field.
-            self.driver.find_element(By.NAME, 'username').send_keys(self.username)
+            username_field = self.driver.find_element(By.NAME, 'username')
+            username_field.clear()
+            username_field.send_keys(self.username)
             # Send password to Password field.
-            self.driver.find_element(By.NAME, 'password').send_keys(self.password)
+            password_field = self.driver.find_element(By.NAME, 'password')
+            password_field.clear()
+            password_field.send_keys(self.password)
             # Find and click the submit button.
             self.driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]').click()
             return True
@@ -120,7 +126,7 @@ class InstaBot:
             :returns
                 -   True on success of self.driver.get('https://instagram.com').
             :raises
-                - selenium.common.exceptions.WebDriverException
+                -   selenium.common.exceptions.WebDriverException
         """
         try:
             self.driver.get('https://instagram.com')
@@ -135,10 +141,10 @@ class InstaBot:
             method.\n
 
             :arg
-                -   condition:          a condition specified in
+                -   condition:          A condition specified in
                                         selenium.webdriver.support.expected_conditions
-                -   search_method:      a By._ locator strategy from selenium.webdriver.common.by
-                -   search_specifier:   string search value as it relates to the search_method
+                -   search_method:      A By._ locator strategy from selenium.webdriver.common.by
+                -   search_specifier:    String search value as it relates to the search_method
             :returns
                 -   Boolean value representing success or failure of self.wait.until(...).
         """
@@ -151,4 +157,4 @@ class InstaBot:
             return True
 
 
-insta_bot = InstaBot(username=4079029897, password='na!')
+insta_bot = InstaBot(username=4079029897, password='Josue1234!')
