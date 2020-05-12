@@ -157,4 +157,4 @@ class InstaBot:
             return True
 
 
-insta_bot = InstaBot(username=4079029897, password='Josue1234!')
+insta_bot = InstaBot(username=4079029897, password='na!')
