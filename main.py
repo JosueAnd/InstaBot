@@ -7,10 +7,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from time import sleep
 
+from exceptions import *
+
 
 class InstaBot:
     def __init__(self, username, password):
-        """ Get an instance of a web browser and login to Instagram. """
+        """
+            Get an instance of a web browser, login to Instagram and start auto-liking.
+        """
 
         # InstaBot instance variables.
         self.driver = webdriver.Firefox()  # Firefox web browser.
@@ -19,70 +23,57 @@ class InstaBot:
         self.password = password  # Instagram password.
 
         # Opening Instagram page, logging in and enabling pop-ups.
-        self._open_instagram()
-        self._login()
-        self._enable_pop_ups()
-        self.run()
+        if self._open_instagram():
+            if self._login():
+                self._disable_notifications()
+                self.run()
 
     def run(self):
-        """ Run the script indefinitely. """
+        """
+            Run the script indefinitely.
+        """
         while True:
-            self._find_user('creativesoulmedia')
-            self._like_posts()
-            # Sleep for one hour before checking again.
-            sleep(60*60)
+            if self._find_user('creativesoulmedia'):
+                self._like_posts()
+                # Sleep for one hour before checking again.
+                sleep(60 * 60)
 
-    def _enable_pop_ups(self):
-        """ Look for the enable notifications pop-up. Respond with enable. """
-        try:
-            # Wait a max of 5 seconds until the pop-up is loaded onto the page.
-            self.wait.until(e_c.presence_of_element_located(
-                    (By.XPATH, '//div[@role="dialog"]')
-            ))
-        except TimeoutException:
-            # If the pop-up is not found, end method procedures.
-            pass
-        else:
-            notifications = self.driver.find_element(By.XPATH,
-                                                     '//div[@role="dialog"]')
-            # If the pop-up is found, click Turn On notifications.
-            notifications.find_element_by_xpath(
-                '//button[contains(text(), "Turn On")]').click()
+    def _disable_notifications(self):
+        """
+            Look for the enable notifications pop-up. Respond with disable.
+        """
+        if self._wait_until(e_c.presence_of_element_located, By.XPATH, '//div[@role="dialog"]'):
+            notifications = self.driver.find_element(By.XPATH, '//div[@role="dialog"]')
+            # If the pop-up is found, click Not Now to notifications.
+            notifications.find_element_by_xpath('//button[contains(text(), "Not Now")]').click()
 
     def _find_user(self, user):
-        """ Find a user and navigate to their page. """
-        try:
-            # Wait a max of 5 seconds until the search bar is loaded onto the
-            # page.
-            self.wait.until(e_c.presence_of_element_located(
-                (By.CSS_SELECTOR, 'input[placeholder="Search"')
-            ))
-        except TimeoutException:
-            pass
-        else:
-            search_bar = self.driver.find_element(By.CSS_SELECTOR,
-                                                  'input[placeholder="Search"')
+        """
+            Find a user and navigate to their page.\n
+
+            :arg
+                -   user:   a string of the username of the user you intend to find.
+            :returns
+                -   True on success of _login() attempt.
+            :raises
+                -   UserNotFoundError
+        """
+        if self._wait_until(e_c.presence_of_element_located, By.CSS_SELECTOR,
+                            'input[placeholder="Search"') is not None:
+            search_bar = self.driver.find_element(By.CSS_SELECTOR, 'input[placeholder="Search"')
             search_bar.send_keys(str(user))
-            try:
-                self.wait.until(e_c.presence_of_element_located(
-                    (By.CSS_SELECTOR, 'a[href="/' + str(user) + '/"]')
-                ))
-            except TimeoutException:
-                pass
-            else:
+            if self._wait_until(e_c.presence_of_element_located,
+                                By.CSS_SELECTOR, 'a[href="/' + str(user) + '/"]'):
                 user_found = self.driver.find_element(
                     By.CSS_SELECTOR, 'a[href="/' + str(user) + '/"]'
                 )
                 user_found.click()
+                return True
+            else:
+                raise UserNotFoundError
 
     def _like_posts(self):
-        try:
-            self.wait.until(e_c.presence_of_all_elements_located(
-                (By.CSS_SELECTOR, 'article>div')
-            ))
-        except TimeoutException:
-            pass
-        else:
+        if self._wait_until(e_c.presence_of_all_elements_located, By.CSS_SELECTOR, 'article>div'):
             posts = self.driver.find_elements(By.CSS_SELECTOR, 'article>img')
             for post in posts:
                 print(post.text)
@@ -103,26 +94,61 @@ class InstaBot:
 
     def _login(self):
         """
-            Type the username and password into their respective fields and
-            click the submit button.
-        """
-        try:
-            self.wait.until(e_c.presence_of_element_located((By.NAME,
-                                                             'username')))
-        except TimeoutException:
-            pass
-        else:
-            self.driver.find_element(By.NAME, 'username').send_keys(self.username)
-            self.driver.find_element(By.NAME, 'password').send_keys(self.password)
+            Type the username and password into their respective fields and click the submit
+            button.\n
 
+            :returns
+                -   True on success of _login() attempt.
+            :raises
+                - LoginError
+        """
+        if self._wait_until(e_c.presence_of_element_located, By.NAME, 'username'):
+            # Send username to Username field.
+            self.driver.find_element(By.NAME, 'username').send_keys(self.username)
+            # Send password to Password field.
+            self.driver.find_element(By.NAME, 'password').send_keys(self.password)
             # Find and click the submit button.
-            submit_button = self.driver.find_element(By.CSS_SELECTOR,
-                                                     'button[type="submit"]')
-            submit_button.click()
+            self.driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]').click()
+            return True
+        else:
+            raise LoginError
 
     def _open_instagram(self):
-        """ Navigate to Instagram and wait for the page to load. """
-        self.driver.get('https://instagram.com')
+        """
+            Navigate to Instagram and wait for the page to load.\n
+
+            :returns
+                -   True on success of self.driver.get('https://instagram.com').
+            :raises
+                - selenium.common.exceptions.WebDriverException
+        """
+        try:
+            self.driver.get('https://instagram.com')
+        except WebDriverException:
+            raise
+        else:
+            return True
+
+    def _wait_until(self, condition, search_method, search_specifier):
+        """
+            Abstracting the exception logic of WebDriverWait.until (TimeoutException) into its own
+            method.\n
+
+            :arg
+                -   condition:          a condition specified in
+                                        selenium.webdriver.support.expected_conditions
+                -   search_method:      a By._ locator strategy from selenium.webdriver.common.by
+                -   search_specifier:   string search value as it relates to the search_method
+            :returns
+                -   Boolean value representing success or failure of self.wait.until(...).
+        """
+        try:
+            self.wait.until(condition((search_method, search_specifier)))
+        except TimeoutException:
+            # Notify of timeout
+            return False
+        else:
+            return True
 
 
 insta_bot = InstaBot(username=4079029897, password='na!')
