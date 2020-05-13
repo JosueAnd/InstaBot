@@ -40,7 +40,7 @@ class InstaBot:
             if self._find_user('creativesoulmedia'):
                 self._like_posts()
                 # Sleep for one hour before checking again.
-                sleep(60 * 60)
+                sleep(5)
 
     def _disable_notifications(self):
         """
@@ -50,6 +50,23 @@ class InstaBot:
             notifications = self.driver.find_element(By.XPATH, '//div[@role="dialog"]')
             # If the pop-up is found, click Not Now to notifications.
             notifications.find_element_by_xpath('//button[contains(text(), "Not Now")]').click()
+
+    def _disable_obscures(self):
+        """
+            Sometimes there are these invisible elements that obscure links on the screen,
+            preventing you from clicking them, or preventing selenium from clicking them and they
+            cause a selenium.common.exceptions.ElementClickIntercepted Exception. Pretty annoying,
+            so this method is to delete them and circumvent the issue.
+
+            source: https://www.geeksforgeeks.org/how-to-remove-an-html-element-using-javascript/
+        """
+        if self._wait_until(e_c.presence_of_all_elements_located, By.CLASS_NAME, 'jLwSh'):
+            self.driver.execute_script("""
+                let pain = document.getElementsByClassName('jLwSh');
+                for (let x = 0; x < pain.length; x++) {
+                    pain[x].parentNode.removeChild(pain[x]);
+                }
+            """)
 
     def _find_user(self, user):
         """
@@ -65,9 +82,11 @@ class InstaBot:
         if self._wait_until(e_c.presence_of_element_located, By.CSS_SELECTOR,
                             'input[placeholder="Search"') is not None:
             search_bar = self.driver.find_element(By.CSS_SELECTOR, 'input[placeholder="Search"')
+            search_bar.clear()
             search_bar.send_keys(str(user))
             if self._wait_until(e_c.presence_of_element_located,
                                 By.CSS_SELECTOR, 'a[href="/' + str(user) + '/"]'):
+                self._disable_obscures()
                 user_found = self.driver.find_element(
                     By.CSS_SELECTOR, 'a[href="/' + str(user) + '/"]'
                 )
@@ -79,20 +98,24 @@ class InstaBot:
     def _like_posts(self):
         if self._wait_until(e_c.presence_of_all_elements_located, By.CSS_SELECTOR, 'article a'):
             posts = self.driver.find_elements(By.CSS_SELECTOR, 'article a')
+            self._disable_obscures()
             for post in posts:
-                self._wait_until(e_c.presence_of_element_located, By.CSS_SELECTOR,
-                                     'button svg[aria-label*="like"]')
-                try:
-                    like_button = post.find_element(By.CSS_SELECTOR,
-                                                    'button svg[aria-label*="like"]')
-                except NoSuchElementException:
-                    pass
-                else:
-                    if 'Like' in like_button.get_attribute('aria-label'):
-                        like_button.click()
-                    close_button = self.driver.find_element(By.CSS_SELECTOR,
-                                            'button svg[aria-label="Close"]')
-                    close_button.click()
+                # This should be converted to an if surrounding the try, only trying to like if the
+                # like button is found, avoiding an exception and extraneous processing power.
+                # self._wait_until(e_c.presence_of_element_located, By.CSS_SELECTOR,
+                #                      'button svg[aria-label*="like"]')
+                print(post)
+                # try:
+                #     like_button = post.find_element(By.CSS_SELECTOR,
+                #                                     'button svg[aria-label*="like"]')
+                # except NoSuchElementException:
+                #     pass
+                # else:
+                #     if 'Like' in like_button.get_attribute('aria-label'):
+                #         like_button.click()
+                #     close_button = self.driver.find_element(By.CSS_SELECTOR,
+                #                             'button svg[aria-label="Close"]')
+                #     close_button.click()
 
     def _login(self):
         """
@@ -157,4 +180,4 @@ class InstaBot:
             return True
 
 
-insta_bot = InstaBot(username=4079029897, password='na!')
+insta_bot = InstaBot(username=4079029897, password='Josue1234!')
