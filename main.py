@@ -214,4 +214,4 @@ class InstaBot:
 # Actual goal of calling InstaBot.
 insta_bot = InstaBot(username=4079029897, password='na!', target='creativesoulmedia')
 # Tester call on InstaBot.
-# insta_bot = InstaBot(username=4079029897, password='Josue1234!', target='hello_mojo_no_real_go')
+# insta_bot = InstaBot(username=4079029897, password='na!', target='hello_mojo_no_real_go')
