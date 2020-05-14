@@ -29,16 +29,3 @@ class LoginError(InstaBotException):
 
     def __str__(self):
         return super(LoginError, self).__str__()
-
-
-class UserNotFoundError(InstaBotException):
-    """
-        Thrown when the user searched for is not found.
-    """
-
-    def __init__(self, msg=None, screen=None, stacktrace=None):
-        super(UserNotFoundError, self).__init__(
-            'The user you are searching for does not seem to exist.', screen, stacktrace)
-
-    def __str__(self):
-        return super(UserNotFoundError, self).__str__()

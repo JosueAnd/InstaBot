@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import *
 from selenium.webdriver.common.keys import Keys
@@ -7,40 +8,48 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from time import sleep
 
-from exceptions import *
-
 
 class InstaBot:
-    def __init__(self, username, password):
+    def __init__(self, username, password, target):
         """
             Get an instance of a web browser, login to Instagram and start auto-liking.\n
 
             :arg
                 -   username:   Phone number, email, whatever you use to login to Instagram.
                 -   password:   Your Instagram password associated with the username.
+                -   target:     Instagram username whose posts you want to like.
         """
 
         # InstaBot instance variables.
-        self.driver = webdriver.Firefox()  # Firefox web browser.
+        # Constants.
+        self.driver = webdriver.Firefox(executable_path='./geckodriver')    # Firefox web browser.
         self.wait = WebDriverWait(self.driver, 10)  # Wait functionality.
-        self.username = username  # Instagram username.
-        self.password = password  # Instagram password.
+        self.action_chain = ActionChains(self.driver)
+        self.url = 'https://instagram.com'
+        # Variable: User dependant.
+        self.username = str(username)   # Instagram login username.
+        self.password = str(password)   # Instagram password.
+        self.target = str(target)   # Instagram username of the target whose posts you want to like.
 
         # Opening Instagram page, logging in and enabling pop-ups.
         if self._open_instagram():
             if self._login():
                 self._disable_notifications()
-                self.run()
+                self._open_new_tab()
+                # self.run()
 
     def run(self):
         """
             Run the script indefinitely.
         """
         while True:
-            if self._find_user('creativesoulmedia'):
-                self._like_posts()
-                # Sleep for one hour before checking again.
-                sleep(5)
+            try:
+                if self._find_user():
+                    self._like_posts()
+                    # Sleep for one hour before checking again.
+                    sleep(5)
+            except KeyboardInterrupt:
+                self.end_session()
 
     def _disable_notifications(self):
         """
@@ -60,6 +69,8 @@ class InstaBot:
 
             source: https://www.geeksforgeeks.org/how-to-remove-an-html-element-using-javascript/
         """
+        # FIXME:    May deprecate this method. Even deleting the obscuring element does not allow us
+        #           to click underlying elements so this method might be pointless.
         if self._wait_until(e_c.presence_of_all_elements_located, By.CLASS_NAME, 'jLwSh'):
             self.driver.execute_script("""
                 let pain = document.getElementsByClassName('jLwSh');
@@ -68,54 +79,55 @@ class InstaBot:
                 }
             """)
 
-    def _find_user(self, user):
+    def _find_user(self):
         """
             Find a user and navigate to their page.\n
 
             :arg
                 -   user:   A string of the username of the user you intend to find.
             :returns
-                -   True on success of _login() attempt.
-            :raises
-                -   UserNotFoundError
+                -   True if the target user was found and navigated to.
         """
         if self._wait_until(e_c.presence_of_element_located, By.CSS_SELECTOR,
-                            'input[placeholder="Search"') is not None:
+                            'input[placeholder="Search"'):
             search_bar = self.driver.find_element(By.CSS_SELECTOR, 'input[placeholder="Search"')
             search_bar.clear()
-            search_bar.send_keys(str(user))
+            search_bar.send_keys(self.target)
             if self._wait_until(e_c.presence_of_element_located,
-                                By.CSS_SELECTOR, 'a[href="/' + str(user) + '/"]'):
-                self._disable_obscures()
-                user_found = self.driver.find_element(
-                    By.CSS_SELECTOR, 'a[href="/' + str(user) + '/"]'
-                )
-                user_found.click()
+                                By.CSS_SELECTOR, 'a[href="/' + self.target + '/"]'):
+                self.driver.get('/'.join([self.url, self.target]))
                 return True
             else:
-                raise UserNotFoundError
+                self.end_session(message='Target user not found.')
 
     def _like_posts(self):
+        # TODO: add documentation
         if self._wait_until(e_c.presence_of_all_elements_located, By.CSS_SELECTOR, 'article a'):
-            posts = self.driver.find_elements(By.CSS_SELECTOR, 'article a')
-            self._disable_obscures()
-            for post in posts:
-                # This should be converted to an if surrounding the try, only trying to like if the
-                # like button is found, avoiding an exception and extraneous processing power.
-                # self._wait_until(e_c.presence_of_element_located, By.CSS_SELECTOR,
-                #                      'button svg[aria-label*="like"]')
-                print(post)
-                # try:
-                #     like_button = post.find_element(By.CSS_SELECTOR,
-                #                                     'button svg[aria-label*="like"]')
-                # except NoSuchElementException:
-                #     pass
-                # else:
-                #     if 'Like' in like_button.get_attribute('aria-label'):
-                #         like_button.click()
-                #     close_button = self.driver.find_element(By.CSS_SELECTOR,
-                #                             'button svg[aria-label="Close"]')
-                #     close_button.click()
+            """
+                Alright guys, new plan. It seems instagram makes it extremely difficult to automate
+                using elements and clicks directly, probably to eliminate: scrapers, bots, etc., so
+                to get around this we are going to open pages using the href links of the elements
+                we want to like. So what we need to do is figure out in selenium how to open and 
+                manage multiple windows and then close multiple windows. We may need to work out 
+                a new workflow to ensure the entire browser is not closed.
+            """
+            pass
+            # posts = self.driver.find_elements(By.CSS_SELECTOR, 'article a')
+            # for post in posts:
+            #     post.click()
+            #     if self._wait_until(e_c.presence_of_element_located, By.CSS_SELECTOR,
+            #                          'button svg[aria-label*="like"]'):
+            #         try:
+            #             like_button = post.find_element(By.CSS_SELECTOR,
+            #                                             'button svg[aria-label*="like"]')
+            #         except NoSuchElementException:
+            #             pass
+            #         else:
+            #             if 'Like' in like_button.get_attribute('aria-label'):
+            #                 like_button.click()
+            #             close_button = self.driver.find_element(By.CSS_SELECTOR,
+            #                                     'button svg[aria-label="Close"]')
+            #             close_button.click()
 
     def _login(self):
         """
@@ -124,8 +136,6 @@ class InstaBot:
 
             :returns
                 -   True on success of _login() attempt.
-            :raises
-                -   LoginError
         """
         if self._wait_until(e_c.presence_of_element_located, By.NAME, 'username'):
             # Send username to Username field.
@@ -140,23 +150,30 @@ class InstaBot:
             self.driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]').click()
             return True
         else:
-            raise LoginError
+            self.end_session()
 
     def _open_instagram(self):
         """
             Navigate to Instagram and wait for the page to load.\n
 
             :returns
-                -   True on success of self.driver.get('https://instagram.com').
+                -   True on success of self.driver.get(self.url).
             :raises
                 -   selenium.common.exceptions.WebDriverException
         """
         try:
-            self.driver.get('https://instagram.com')
+            self.driver.get(self.url)
         except WebDriverException:
-            raise
+            self.end_session(message="Instagram wasn't able to open for some reason...check your "
+                                     "internet connection?")
         else:
             return True
+
+    def _open_new_tab(self):
+        # TODO: add documentation
+        # self.driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.CONTROL + 't')
+        new_tab = self.action_chain.key_down(Keys.CONTROL).send_keys('t').key_up(Keys.CONTROL)
+        new_tab.perform()
 
     def _wait_until(self, condition, search_method, search_specifier):
         """
@@ -174,10 +191,27 @@ class InstaBot:
         try:
             self.wait.until(condition((search_method, search_specifier)))
         except TimeoutException:
-            # Notify of timeout
             return False
         else:
             return True
 
+    def end_session(self, message=None):
+        # TODO: add documentation
+        if message is not None:
+            self.driver.execute_script(
+                'window.alert("' + str(message) + '\\nWaiting 10 seconds before exit.");'
+            )
+        else:
+            self.driver.execute_script(
+                'window.alert("Something went wrong.\\nWaiting 10 seconds before exit.");'
+            )
+        sleep(10)
+        self.driver.close()
+        self.driver.quit()
+        exit(0)
 
-insta_bot = InstaBot(username=4079029897, password='Josue1234!')
+
+# Actual goal of calling InstaBot.
+insta_bot = InstaBot(username=4079029897, password='na!', target='creativesoulmedia')
+# Tester call on InstaBot.
+# insta_bot = InstaBot(username=4079029897, password='Josue1234!', target='hello_mojo_no_real_go')
