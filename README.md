@@ -4,7 +4,7 @@ InstaBot is a simple command line application written utilizing Python 3.8 and t
 It can be run "headless" in the background or with an open browser so that you can monitor its progress.
 
 ### Goals:
- [x] Open a web browser, either visibly or headless.
+ [x]Open a web browser, either visibly or headless.
 [x] Navigate to https://instagram.com/
 [x] Login with the given username and password.
 [x] Utilize the search box of Instagram to verify whether or not the target user has an
