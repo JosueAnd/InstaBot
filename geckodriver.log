@@ -2000,3 +2000,13 @@ Exiting due to channel error.
 1589539022370	Marionette	INFO	Listening on port 36913
 1589539022458	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: https://www.instagram.com/static/bundles/es6/Consumer.js/67672d42e364.js, line 315: TypeError: this.props is undefined
+1589559394212	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYVZMuz"
+1589559394593	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1589559395269	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1589559395269	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1589559395269	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1589559395269	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1589559397187	Marionette	INFO	Listening on port 40713
+1589559397219	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.instagram.com/static/bundles/es6/Consumer.js/67672d42e364.js, line 315: TypeError: this.props is undefined
+1589559420876	Marionette	INFO	Stopped listening on port 40713

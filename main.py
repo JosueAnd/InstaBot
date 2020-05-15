@@ -204,7 +204,7 @@ class InstaBot:
 
 
 if __name__ == '__main__':
-    error_message = """
+    usage_message = """
                 main.py -u <username> -p <password> -t <target> -m <mode>
                 \n\n\t\tor\n\n
                 main.py --username <username> --password <password> --target <target> --mode <mode>
@@ -219,14 +219,14 @@ if __name__ == '__main__':
         options, throw_away = getopt(sys.argv[1:], 'u:p:t:m:',
                                      ['username=', 'password=', 'target=', 'mode='])
     except GetoptError:
-        print(error_message)
+        print(usage_message)
         sys.exit(2)
     else:
         if len(options) == 3 or len(options) == 4:
             for option, argument in options:
                 if option not in \
                         ['-u', '-p', '-t', '-m', '--username', '--password', '--target', '--mode']:
-                    print(error_message)
+                    print(usage_message)
                     sys.exit()
                 elif option in ('-u', '--username'):
                     un = argument
@@ -241,5 +241,5 @@ if __name__ == '__main__':
             else:
                 InstaBot(username=un, password=pw, target=t)
         else:
-            print(error_message)
+            print(usage_message)
             sys.exit()
