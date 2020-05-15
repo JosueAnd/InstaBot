@@ -205,15 +205,15 @@ class InstaBot:
 
 if __name__ == '__main__':
     usage_message = """
-                main.py -u <username> -p <password> -t <target> -m <mode>
-                \n\n\t\tor\n\n
-                main.py --username <username> --password <password> --target <target> --mode <mode>
-                -   username:   Phone number, email, whatever you use to login to Instagram.
-                -   password:   Your Instagram password associated with the username.
-                -   target:     Instagram username whose posts you want to like.
-                -   mode:       Can be "visible" for a FireFox browser or "headless" for no 
-                                visible browser.
-                """
+            instabot.py -u <username> -p <password> -t <target> -m <mode>
+            \n\n\t\tor\n\n
+            instabot.py --username <username> --password <password> --target <target> --mode <mode>
+            -   username:   Phone number, email, whatever you use to login to Instagram.
+            -   password:   Your Instagram password associated with the username.
+            -   target:     Instagram username whose posts you want to like.
+            -   mode:       Can be "visible" for a FireFox browser or "headless" for no 
+                            visible browser.
+            """
     un, pw, t, m = None, None, None, None
     try:
         options, throw_away = getopt(sys.argv[1:], 'u:p:t:m:',
