@@ -13,4 +13,13 @@ It can be run "headless" in the background or with an open browser so that you c
 - [x] Like all photo on a user's profile that are not yet liked.
   - [x] Grab urls to all photo's pages on a user's profile.
   - [x] Navigate to each page, check whether the photo is liked and Like if it is not already.
-  
+  - [x] Pause for one hour before repeating (checking for new posts).
+
+### Future Features:
+- [ ] GUI utilizing tkinter.
+- [ ] Multiple target users.
+- [ ] Customize cycle pause time.
+- [ ] Credential storing for easy login.
+  - [ ] Alert to not utilize if script is running on an untrusted device.
+  - [ ] Credential encryption.
+- [ ] Target storing for easy continuity upon power cycles.
