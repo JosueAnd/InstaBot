@@ -40,6 +40,7 @@ class InstaBot:
                                             options=ff_options)
         self.wait = WebDriverWait(self.driver, 10)  # Wait functionality.
         self.url = 'https://instagram.com'
+        self.sleep_time = 60*60
         # Variable: User dependant.
         self.username = str(username)  # Instagram login username.
         self.password = str(password)  # Instagram password.
@@ -51,6 +52,28 @@ class InstaBot:
                 self._disable_notifications()
                 self.run()
 
+    def end_session(self, message=None):
+        """
+            End the current session of InstaBot displaying a browser alert if certain errors
+            occur. Browser alert will only appear if utilizing the geckodriver browser.\n
+
+            :arg
+                -   message:    Message of what went wrong to display to the user in visible
+                                operation mode.
+        """
+        if message is not None:
+            self.driver.execute_script(
+                'window.alert("' + str(message) + '\\nWaiting 10 seconds before exit.");'
+            )
+        else:
+            self.driver.execute_script(
+                'window.alert("Something went wrong.\\nWaiting 10 seconds before exit.");'
+            )
+        sleep(10)
+        self.driver.close()
+        self.driver.quit()
+        exit(0)
+
     def run(self):
         """
             Run the script indefinitely.
@@ -59,14 +82,16 @@ class InstaBot:
             try:
                 if self._find_user():
                     self._like_posts()
-                    # Sleep for one hour before checking again.
-                    sleep(60 * 60)
+                    self._run_again_in_one_hour()
             except (KeyboardInterrupt,
                     ElementClickInterceptedException,
-                    ConnectionResetError,
-                    ConnectionAbortedError,
                     ProtocolError):
-                self.end_session()
+                try:
+                    self.end_session()
+                except (ConnectionRefusedError,
+                        ConnectionAbortedError,
+                        ConnectionResetError):
+                    exit()
 
     def _disable_notifications(self):
         """
@@ -160,6 +185,16 @@ class InstaBot:
         else:
             return True
 
+    def _run_again_in_one_hour(self):
+        sleep_time = self.sleep_time
+        while sleep_time:
+            minutes = sleep_time // 60
+            seconds = sleep_time % 60
+            print('Time until next run: {} minutes {} seconds'.format(minutes, seconds))
+            sleep(1)
+            sleep_time -= 1
+            sys.stdout.write('\033[1A\033[K')
+
     def _wait_until(self, condition, search_method, search_specifier):
         """
             Abstracting the exception logic of WebDriverWait.until (TimeoutException) into its own
@@ -179,28 +214,6 @@ class InstaBot:
             return False
         else:
             return True
-
-    def end_session(self, message=None):
-        """
-            End the current session of InstaBot displaying a browser alert if certain errors
-            occur. Browser alert will only appear if utilizing the geckodriver browser.\n
-
-            :arg
-                -   message:    Message of what went wrong to display to the user in visible
-                                operation mode.
-        """
-        if message is not None:
-            self.driver.execute_script(
-                'window.alert("' + str(message) + '\\nWaiting 10 seconds before exit.");'
-            )
-        else:
-            self.driver.execute_script(
-                'window.alert("Something went wrong.\\nWaiting 10 seconds before exit.");'
-            )
-        sleep(10)
-        self.driver.close()
-        self.driver.quit()
-        exit(0)
 
 
 if __name__ == '__main__':
